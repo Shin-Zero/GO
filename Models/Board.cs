@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using System.Drawing;
+using System.Windows;
+using System.Windows.Input;
 using GalaSoft.MvvmLight;
 
 namespace GO.Models
@@ -29,40 +30,45 @@ namespace GO.Models
             CreateBoard(19,19);
             Stones = new ObservableCollection<Stone>
             {
-                new Stone {Position = new Point(0, 6), Type = StoneType.Black},
-                new Stone {Position = new Point(1, 6), Type = StoneType.Black},
-                new Stone {Position = new Point(2, 6), Type = StoneType.White},
-                new Stone {Position = new Point(3, 6), Type = StoneType.Black},
-                new Stone {Position = new Point(4, 6), Type = StoneType.White},
-                new Stone {Position = new Point(5, 6), Type = StoneType.Black},
-                new Stone {Position = new Point(6, 6), Type = StoneType.White},
-                new Stone {Position = new Point(7, 6), Type = StoneType.Black},
-                new Stone {Position = new Point(0, 7), Type = StoneType.White},
-                new Stone {Position = new Point(1, 7), Type = StoneType.Black},
-                new Stone {Position = new Point(2, 7), Type = StoneType.White},
-                new Stone {Position = new Point(3, 7), Type = StoneType.Black},
-                new Stone {Position = new Point(4, 7), Type = StoneType.White},
-                new Stone {Position = new Point(5, 7), Type = StoneType.Black},
-                new Stone {Position = new Point(6, 7), Type = StoneType.White},
-                new Stone {Position = new Point(7, 7), Type = StoneType.Black},
-                new Stone {Position = new Point(0, 1), Type = StoneType.White},
-                new Stone {Position = new Point(1, 1), Type = StoneType.Black},
-                new Stone {Position = new Point(2, 1), Type = StoneType.White},
-                new Stone {Position = new Point(3, 1), Type = StoneType.Black},
-                new Stone {Position = new Point(4, 1), Type = StoneType.White},
-                new Stone {Position = new Point(5, 1), Type = StoneType.Black},
-                new Stone {Position = new Point(6, 1), Type = StoneType.White},
-                new Stone {Position = new Point(7, 1), Type = StoneType.Black},
+                new Stone {Position = new Point(0, 600), Type = StoneType.Black},
+                new Stone {Position = new Point(100, 600), Type = StoneType.Black},
+                new Stone {Position = new Point(200, 600), Type = StoneType.White},
+                new Stone {Position = new Point(300, 600), Type = StoneType.Black},
+                new Stone {Position = new Point(400, 600), Type = StoneType.White},
+                new Stone {Position = new Point(500, 600), Type = StoneType.Black},
+                new Stone {Position = new Point(600, 600), Type = StoneType.White},
+                new Stone {Position = new Point(700, 600), Type = StoneType.Black},
+                new Stone {Position = new Point(0, 700), Type = StoneType.White},
+                new Stone {Position = new Point(100, 700), Type = StoneType.Black},
+                new Stone {Position = new Point(200, 700), Type = StoneType.White},
+                new Stone {Position = new Point(300, 700), Type = StoneType.Black},
+                new Stone {Position = new Point(400, 700), Type = StoneType.White},
+                new Stone {Position = new Point(500, 700), Type = StoneType.Black},
+                new Stone {Position = new Point(600, 700), Type = StoneType.White},
+                new Stone {Position = new Point(700, 700), Type = StoneType.Black},
+                new Stone {Position = new Point(0, 100), Type = StoneType.White},
+                new Stone {Position = new Point(100, 100), Type = StoneType.Black},
+                new Stone {Position = new Point(200, 100), Type = StoneType.White},
+                new Stone {Position = new Point(300, 100), Type = StoneType.Black},
+                new Stone {Position = new Point(400, 100), Type = StoneType.White},
+                new Stone {Position = new Point(500, 100), Type = StoneType.Black},
+                new Stone {Position = new Point(600, 100), Type = StoneType.White},
+                new Stone {Position = new Point(700, 100), Type = StoneType.Black},
                 new Stone {Position = new Point(0, 0), Type = StoneType.White},
-                new Stone {Position = new Point(1, 0), Type = StoneType.Black},
-                new Stone {Position = new Point(2, 0), Type = StoneType.White},
-                new Stone {Position = new Point(3, 0), Type = StoneType.Black},
-                new Stone {Position = new Point(4, 0), Type = StoneType.White},
-                new Stone {Position = new Point(5, 0), Type = StoneType.Black},
-                new Stone {Position = new Point(6, 0), Type = StoneType.White},
-                new Stone {Position = new Point(7, 0), Type = StoneType.Black}
+                new Stone {Position = new Point(100, 0), Type = StoneType.Black},
+                new Stone {Position = new Point(200, 0), Type = StoneType.White},
+                new Stone {Position = new Point(300, 0), Type = StoneType.Black},
+                new Stone {Position = new Point(400, 0), Type = StoneType.White},
+                new Stone {Position = new Point(500, 0), Type = StoneType.Black},
+                new Stone {Position = new Point(600, 0), Type = StoneType.White},
+                new Stone {Position = new Point(700, 0), Type = StoneType.Black}
             };
 		}
+
+	    public void AddStone(MouseButtonEventArgs args)
+	    {
+
+	    }
 
 	    private void CreateBoard(int x, int y)
 	    {

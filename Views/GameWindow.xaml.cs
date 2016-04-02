@@ -20,11 +20,14 @@ namespace GO.Views
     /// </summary>
     public partial class GameWindow : Window
     {
-        private readonly ViewModelLocator _sericeLocator = new ViewModelLocator();
         public GameWindow()
         {
             InitializeComponent();
-            DataContext = _sericeLocator.GameWindow;
+        }
+
+        private void Canvas_OnMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

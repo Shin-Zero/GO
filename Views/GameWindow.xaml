@@ -3,24 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:GO.Views"
+             xmlns:local="clr-namespace:GO.Views" WindowStartupLocation="CenterScreen"
              xmlns:models="clr-namespace:GO.Models"
              mc:Ignorable="d" Title="GO Game window"
              d:DesignHeight="300" d:DesignWidth="300">
     <Window.Resources>
-        <DrawingBrush x:Key="GoBoardBrush" Stretch="None" TileMode="Tile" Viewport="0,0,2,2" ViewportUnits="Absolute">
+        <DrawingBrush x:Key="GoBoardBrush" Stretch="None" TileMode="Tile" Viewport="0,0,200,200" ViewportUnits="Absolute">
             <DrawingBrush.Drawing>
                 <DrawingGroup>
                     <GeometryDrawing Brush="Tan">
                         <GeometryDrawing.Geometry>
-                            <RectangleGeometry Rect="0,0,2,2" />
+                            <RectangleGeometry Rect="0,0,200,200" />
                         </GeometryDrawing.Geometry>
                     </GeometryDrawing>
                     <GeometryDrawing Brush="Brown">
                         <GeometryDrawing.Geometry>
                             <GeometryGroup>
-                                <RectangleGeometry Rect="0,0,1,1" />
-                                <RectangleGeometry Rect="1,1,1,1" />
+                                <RectangleGeometry Rect="0,0,100,100" />
+                                <RectangleGeometry Rect="100,100,100,100" />
                             </GeometryGroup>
                         </GeometryDrawing.Geometry>
                     </GeometryDrawing>
@@ -52,20 +52,20 @@
         <ItemsControl Name="GoBoard" ItemsSource="{Binding Stones}">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <Canvas Width="8" Height="8" Background="{StaticResource GoBoardBrush}"/>
+                    <Canvas Width="800" Height="800" Background="{StaticResource GoBoardBrush}" MouseUp="Canvas_OnMouseUp"/>
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <Grid Width="1" Height="1">
-                        <Image Width="0.8" Height="0.8" Style="{StaticResource StoneStyle}" />
+                    <Grid Width="100" Height="100">
+                        <Image Width="80" Height="80" Style="{StaticResource StoneStyle}" />
                     </Grid>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
             <ItemsControl.ItemContainerStyle>
                 <Style>
-                    <Setter Property="Canvas.Left" Value="{Binding Pos.X}" />
-                    <Setter Property="Canvas.Top" Value="{Binding Pos.Y}" />
+                    <Setter Property="Canvas.Left" Value="{Binding Position.X}" />
+                    <Setter Property="Canvas.Top" Value="{Binding Position.Y}" />
                 </Style>
             </ItemsControl.ItemContainerStyle>
         </ItemsControl>

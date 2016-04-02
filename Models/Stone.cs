@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Drawing;
+using System.Windows;
 using GalaSoft.MvvmLight;
 
 namespace GO.Models

@@ -27,3 +27,5 @@ C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\GO.Properties.R
 C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\GO.csproj.GenerateResource.Cache
 C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\GO.exe
 C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\GO.pdb
+C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\Test\ChessWindow.g.cs
+C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\Test\ChessWindow.baml

@@ -1,12 +1,4 @@
-﻿/*
- * Created by SharpDevelop.
- * User: locbrag
- * Date: 18.03.2016
- * Time: 11:58
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -15,6 +7,8 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using GO.Test;
+using GO.ViewModel;
 using GO.Views;
 
 namespace GO
@@ -23,12 +17,16 @@ namespace GO
 	/// Interaction logic for Window1.xaml
 	/// </summary>
 	public partial class MainWindow : Window
-	{
-		public MainWindow()
+    {
+        private readonly ViewModelLocator _sericeLocator = new ViewModelLocator();
+        public MainWindow()
 		{
 			InitializeComponent();
-            var board = new GameWindow();
-		    board.ShowDialog();
+            //var chess = new ChessWindow();
+            //chess.ShowDialog();
+            var board = new GameWindow {DataContext = _sericeLocator.GameWindow};
+            board.ShowDialog();
+            Close();
 		}
 	}
 }
