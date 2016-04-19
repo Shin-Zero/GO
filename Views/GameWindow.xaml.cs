@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GO.Models;
 using GO.ViewModel;
 
 namespace GO.Views
@@ -20,6 +21,7 @@ namespace GO.Views
     /// </summary>
     public partial class GameWindow : Window
     {
+
         public GameWindow()
         {
             InitializeComponent();
@@ -27,7 +29,7 @@ namespace GO.Views
 
         private void Canvas_OnMouseUp(object sender, MouseButtonEventArgs e)
         {
-            throw new NotImplementedException();
+            (DataContext as Board).AddStone(sender, e);
         }
     }
 }
