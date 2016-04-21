@@ -6,9 +6,9 @@
              xmlns:local="clr-namespace:GO.Views" WindowStartupLocation="CenterScreen"
              xmlns:models="clr-namespace:GO.Models"
              mc:Ignorable="d" Title="GO Game window"
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="900" d:DesignWidth="900">
     <Window.Resources>
-        <DrawingBrush x:Key="GoBoardBrush" Stretch="None" TileMode="Tile" Viewport="0,0,200,200" ViewportUnits="Absolute">
+        <DrawingBrush x:Key="ChessBoardBrush" Stretch="None" TileMode="Tile" Viewport="0,0,200,200" ViewportUnits="Absolute">
             <DrawingBrush.Drawing>
                 <DrawingGroup>
                     <GeometryDrawing Brush="Tan">
@@ -27,6 +27,7 @@
                 </DrawingGroup>
             </DrawingBrush.Drawing>
         </DrawingBrush>
+    	<ImageBrush x:Key="GoBoardBrush" ImageSource="../Resources/Board1.png"></ImageBrush>
         <Style x:Key="StoneStyle" TargetType="{x:Type Image}">
             <Style.Triggers>
                 <MultiDataTrigger>
@@ -48,17 +49,29 @@
             </Style.Triggers>
         </Style>
     </Window.Resources>
-    <Grid>
+    <StackPanel>
+    	<DockPanel HorizontalAlignment="Center" Width="{Binding BoardSize}" Background="AliceBlue">
+    		<Label Content="Белые камни" DockPanel.Dock="Left"/>
+    		<TextBlock DockPanel.Dock="Left" Text="{Binding WhiteStonesCount}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    		<Label Content="Черные камни" DockPanel.Dock="Right" HorizontalAlignment="Right"/>
+    		<TextBlock DockPanel.Dock="Right" Text="{Binding BlackStonesCount}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+    	</DockPanel>
+		<DockPanel HorizontalAlignment="Center" Width="{Binding BoardSize}" Background="AliceBlue">
+    		<Label Content="Белый игрок" DockPanel.Dock="Left"/>
+    		<TextBlock DockPanel.Dock="Left" Text="{Binding WhiteScore}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    		<Label Content="Черный игрок" DockPanel.Dock="Right" HorizontalAlignment="Right"/>
+    		<TextBlock DockPanel.Dock="Right" Text="{Binding BlackScore}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+    	</DockPanel>
         <ItemsControl Name="GoBoard" ItemsSource="{Binding Stones}">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <Canvas Width="800" Height="800" Background="{StaticResource GoBoardBrush}" MouseUp="Canvas_OnMouseUp"/>
+                    <Canvas Width="700" Height="700" Background="{StaticResource GoBoardBrush}" MouseUp="Canvas_OnMouseUp"/>
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <Grid Width="100" Height="100">
-                        <Image Width="80" Height="80" Style="{StaticResource StoneStyle}" />
+                    <Grid Width="40" Height="40">
+                        <Image Width="35" Height="35" Style="{StaticResource StoneStyle}" />
                     </Grid>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
@@ -69,5 +82,6 @@
                 </Style>
             </ItemsControl.ItemContainerStyle>
         </ItemsControl>
-    </Grid>
+		
+    </StackPanel>
 </Window>

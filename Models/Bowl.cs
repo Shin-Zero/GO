@@ -18,7 +18,8 @@ namespace GO.Models
 	    [NotifyPropertyChangedInvocator]
 	    protected virtual void RaisePropertyChanged(string propertyName)
 	    {
-	        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+	    	if(PropertyChanged != null)
+	    		PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
 	    }
 	}
 }

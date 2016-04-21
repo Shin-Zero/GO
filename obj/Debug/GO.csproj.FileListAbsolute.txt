@@ -29,3 +29,34 @@ C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\GO.exe
 C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\GO.pdb
 C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\Test\ChessWindow.g.cs
 C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\Test\ChessWindow.baml
+F:\GO\obj\Debug\GO.csprojResolveAssemblyReference.cache
+F:\GO\obj\Debug\Views\MainWindow.baml
+F:\GO\obj\Debug\Test\ChessWindow.g.cs
+F:\GO\obj\Debug\Views\GameWindow.g.cs
+F:\GO\obj\Debug\Views\MainWindow.g.cs
+F:\GO\obj\Debug\App.g.cs
+F:\GO\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\GO\obj\Debug\GO_MarkupCompile.cache
+F:\GO\obj\Debug\GO_MarkupCompile.lref
+F:\GO\obj\Debug\GO.exe
+F:\GO\bin\Debug\GO.exe.config
+F:\GO\bin\Debug\GO.exe
+F:\GO\bin\Debug\GO.pdb
+F:\GO\bin\Debug\GalaSoft.MvvmLight.dll
+F:\GO\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+F:\GO\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\GO\bin\Debug\System.Windows.Interactivity.dll
+F:\GO\bin\Debug\GalaSoft.MvvmLight.pdb
+F:\GO\bin\Debug\GalaSoft.MvvmLight.xml
+F:\GO\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+F:\GO\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+F:\GO\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\GO\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+F:\GO\bin\Debug\System.Windows.Interactivity.xml
+F:\GO\obj\Debug\App.baml
+F:\GO\obj\Debug\Test\ChessWindow.baml
+F:\GO\obj\Debug\Views\GameWindow.baml
+F:\GO\obj\Debug\GO.g.resources
+F:\GO\obj\Debug\GO.Properties.Resources.resources
+F:\GO\obj\Debug\GO.csproj.GenerateResource.Cache
+F:\GO\obj\Debug\GO.pdb
