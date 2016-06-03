@@ -11,7 +11,6 @@ C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\bin\Debug\GalaSoft.MvvmLi
 C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\bin\Debug\GalaSoft.MvvmLight.Extras.xml
 C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\bin\Debug\System.Windows.Interactivity.xml
 C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\GO.csprojResolveAssemblyReference.cache
 C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\Views\MainWindow.baml
 C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\Views\GameWindow.g.cs
@@ -60,3 +59,12 @@ F:\GO\obj\Debug\GO.g.resources
 F:\GO\obj\Debug\GO.Properties.Resources.resources
 F:\GO\obj\Debug\GO.csproj.GenerateResource.Cache
 F:\GO\obj\Debug\GO.pdb
+C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\bin\Debug\WPFSpark.dll
+C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\Views\FluidItemControl.g.cs
+C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\Views\FluidItemControl.baml
+C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\Resources\Styles\IconGlyphVectors.baml
+C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\Resources\Styles\SplitViewStyles.baml
+C:\Users\ZERO\Documents\Visual Studio 2015\Projects\GO\obj\Debug\GO_Content.g.cs

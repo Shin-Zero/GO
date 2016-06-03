@@ -99,8 +99,8 @@ namespace GO.Models
         public Board()
 		{
             CreateBoard(19,19);
-            BoardSize = 700;
-            StoneSize = 40;
+            BoardSize = 400;
+            StoneSize = 20;
             WhiteScore+=6.5;
             approximation = BoardSize*0.03; //величина приближения при проверки позиции клика
 	    	border = 0.03; // ширина "неигровой" границы доски
@@ -174,7 +174,8 @@ namespace GO.Models
 	        var y = (yDifHigh > yDifLow ? approximatedYLow : approximatedYHigh ) - StoneSize/2; //Y координата установки камня
 	        
 	        //Проверка на наличие камня в околокликовой позиции
-	        if(!Stones.Any((s) => ((s.Position.X < x + approximation) && (s.Position.X > x - approximation)) && ((s.Position.Y < y + approximation) && (s.Position.Y > y - approximation))))
+	        if(!Stones.Any((s) => 
+            ((s.Position.X < x + approximation) && (s.Position.X > x - approximation)) && ((s.Position.Y < y + approximation) && (s.Position.Y > y - approximation))))
 	        {
 	        	var newStone = new Stone {Position = new Point(x,y),Type = _currentType};
                 _checkedStones = new List<Stone>();

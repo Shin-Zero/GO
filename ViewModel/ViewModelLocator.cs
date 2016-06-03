@@ -55,7 +55,6 @@ namespace GO.ViewModel
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
             }
         }
-
         public Board GameWindow
         {
             get
